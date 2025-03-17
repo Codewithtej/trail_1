@@ -15,6 +15,8 @@ completion = client.chat.completions.create(
 )
 
 print(completion.choices[0].message.content)
+st.write('Enter a text prompt, and the model will generate a completion.')
+st.write(completion.choices[0].message.content)
 # import openai
 # import streamlit as st
 

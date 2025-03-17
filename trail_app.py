@@ -5,7 +5,7 @@ api_key = st.secrets["openai_api_key"]
 client = OpenAI(api_key=api_key)
 
 completion = client.chat.completions.create(
-    model="gpt-4o",
+    model="gpt-3.5-turbo",
     messages=[
         {
             "role": "user",
